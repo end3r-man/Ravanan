@@ -48,7 +48,7 @@ function App() {
             <Route path="/vision" element={<VisionPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/howitwork" element={<HowItWorkPage />} />
-          {/* <Route path="/services" element={<ServicePage />}>
+          <Route path="/services" element={<ServicePage />}>
 
             <Route path="car" element={<CarPage />} />
             <Route path="bike" element={<Bikepage />} />
@@ -58,7 +58,7 @@ function App() {
             <Route path="location" element={<RelocationPage />} />
             <Route path="warhouse" element={<WarHousePage />} />
             <Route path="loading" element={<LoadingPage />} />
-          </Route> */}
+          </Route>
 
 
 

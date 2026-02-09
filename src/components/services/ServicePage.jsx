@@ -1,161 +1,213 @@
 import React, { useState } from 'react';
-import { ChevronRight, Mail, Phone, MapPin, Download, Plus, Minus } from 'lucide-react';
+import { ChevronRight, Mail, Phone, MapPin, Download, Plus, Minus, Clock, Shield, Star } from 'lucide-react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import parcel10 from '../../assets/parcel10.jpg'
-
+import parcel17 from "../../assets/parcel17.jpg";
+import parcel9 from '../../assets/parcel9.jpg'
 
 export default function ServicePage() {
   const [openFaq, setOpenFaq] = useState(null);
   const navigate = useNavigate();
 
-const services = [
-  { name: "Bike Transport", path: "/services/bike" },
-  { name: "Car Transport", path: "/services/car" },
-  { name: "Home Shifting", path: "/services/home" },
-  { name: "Office Shifting", path: "/services/office" },
-  { name: "Package Moving", path: "/services/package" },
-  { name: "Relocation Service", path: "/services/location" },
-  { name: "Warhouse Service", path: "/services/warhouse" },
-  { name: "Loading & Unloading", path: "/services/loading" },
-];
+  const services = [
+    { name: "Bike Transport", path: "/services/bike" },
+    { name: "Car Transport", path: "/services/car" },
+    { name: "Home Shifting", path: "/services/home" },
+    { name: "Office Shifting", path: "/services/office" },
+    { name: "Package Moving", path: "/services/package" },
+    { name: "Relocation Service", path: "/services/location" },
+    { name: "Warhouse Service", path: "/services/warhouse" },
+    { name: "Loading & Unloading", path: "/services/loading" },
+  ];
 
+  const pageContent = {
+    heroImage: parcel9,
+    title: "Bike Transportation Services",
+    description: [
+      "Our Bike Transportation Service is designed to move your two-wheeler safely, efficiently, and without hassle. Whether you are relocating to a new city or sending your bike across states, we ensure secure handling from pickup to delivery using professional packing methods.",
+      "With years of experience in two-wheeler logistics, we provide reliable door-to-door bike transport solutions. From proper documentation support to real-time tracking, we make the entire process smooth, transparent, and worry-free.",
+    ],
+    extraDescription:
+      "We follow a structuyellow bike transportation process that includes inspection, professional packing, safe loading, transit monitoring, and careful unloading at the destination. Every bike is handled with precision to ensure it reaches you in perfect condition.",
+  };
+
+  const serviceCards = [
+    {
+      id: 1,
+      number: "01",
+      title: "Secure Bike Packing",
+      desc: "High-quality packing materials are used to protect your bike from scratches, dust, and transit damage.",
+      score: "96% SAFETY SCORE",
+      icon: Shield,
+    },
+    {
+      id: 2,
+      number: "02",
+      title: "On-Time Delivery",
+      desc: "Our logistics network ensures timely pickup and delivery of your bike across cities and states.",
+      score: "98% DELIVERY SCORE",
+      icon: Clock,
+    },
+  ];
 
   const faqs = [
     {
-      question: "Can I specify a delivery date when ordering?",
-      answer: "We are committed to providing customers with exceptional service while offering our employees the best training. There are many variations of passages lorem ipsum is simply free."
+      question: "Is my bike safe during transportation?",
+      answer:
+        "Yes, your bike is packed using premium protective materials and handled by trained professionals to ensure complete safety during transit.",
     },
     {
-      question: "How can I track my shipments?",
-      answer: "You can track your shipments through our online portal using your tracking number."
+      question: "How long does bike transportation take?",
+      answer:
+        "Delivery time depends on distance and destination, but we always aim for fast and on-time delivery with regular updates.",
     },
     {
-      question: "What is included in your services?",
-      answer: "Our services include warehousing, packaging, storage, and delivery solutions."
+      question: "Can I track my bike shipment?",
+      answer:
+        "Yes, tracking details are provided so you can monitor your bike shipment in real time.",
     },
     {
-      question: "How can I safely use fles?",
-      answer: "All our facilities follow strict safety protocols and guidelines."
-    }
+      question: "What documents are requiyellow for bike transport?",
+      answer:
+        "Usually, a copy of the bike RC, insurance, and ID proof are requiyellow. Our team will guide you throughout the process.",
+    },
   ];
 
   return (
     <>
-    
-       <div
-        className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
+      {/* Hero Section */}
+      <div
+        className="relative bg-cover bg-center h-[500px] flex items-center"
         style={{
-           backgroundImage: `url(${parcel10})`,
-      }}
+          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)), url(${parcel10})`,
+        }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10 animate-pulse"></div>
+        
+        {/* Yellow accent line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400"></div>
 
         {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <h1 className="h1 font-bold text-white">
-            Our Services
-          </h1>
-          {/* <p className="mt-3 text-gray-200 max-w-2xl h3">
-            We'd love to hear from you. Let's talk about your project!
-          </p> */}
-        </div>
-      </div>
-
-         <div className="min-h-screen bg-gray-50 flex mt-20 max-w-7xl mx-auto">
-      
-      {/* Sidebar */}
-      <div className="w-64 bg-white flex-shrink-0 hidden lg:block">
-        {/* Our Services */}
-        <div className="bg-slate-800 text-white p-4 font-bold">
-          OUR SERVICES
-        </div>
-        <div className="py-2">
-       <div className="py-2">
-      {services.map((service, index) => {
-        const isActive = location.pathname === `${service.path}`;
-console.log("Current Path:", location.pathname, "Service Path:", service.path, "Is Active:", isActive, "thiw will re-render");
-        return (
-          <div
-            key={index}
-            onClick={() => navigate(`${service.path}`)}
-            className={`flex items-center justify-between px-4 py-3 cursor-pointer transition-colors
-              ${isActive ? "bg-red-500 text-white" : "text-gray-700 hover:bg-gray-100"}
-            `}
-          >
-            <span className="h6">{service.name}</span>
-            <ChevronRight className="w-4 h-4" />
-          </div>
-        );
-      })}
-    </div>
-        </div>
-
-        {/* Contact Info */}
-        <div className="bg-slate-800 text-white p-4 font-bold mt-8">
-          CONTACT INFO
-        </div>
-        <div className="p-4 space-y-4">
-          <div className="flex items-start gap-3">
-            <div className="bg-red-500 text-white rounded-full p-2 flex-shrink-0">
-              <Mail className="w-4 h-4" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-3xl">
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-yellow-400 text-black font-bold text-sm tracking-wider">
+                PROFESSIONAL SERVICES
+              </span>
             </div>
-            <div>
-              <div className="h6 font-bold text-yellow-900">Email Address</div>
-              <div className="h6 text-gray-600 break-all">info@Ravananpackersandmovers.com</div>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="bg-red-500 text-white rounded-full p-2 flex-shrink-0">
-              <Phone className="w-4 h-4" />
-            </div>
-            <div>
-              <div className="h6 font-bold text-yellow-900">Phone Number</div>
-              <div className="h6 text-gray-600"> +91 96550 99933</div>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="bg-red-500 text-white rounded-full p-2 flex-shrink-0">
-              <MapPin className="w-4 h-4" />
-            </div>
-            <div>
-              <div className="h6 font-bold text-yellow-900">Location</div>
-              <div className="h6 text-gray-600">D/O Thangaraj, 44, Neelampayalam, Kollapanur, Gobichettipalayam, Getticheyur, Erode District, <br /> Tamil Nadu – 638110</div>
-              {/* <div className="h6 text-gray-600">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</div> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Brochures */}
-  
-      
-
-        {/* Help Section */}
-        <div className=" bg-slate-800 text-white p-6 text-center">
-          <div className="bg-red-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <Phone className="w-8 h-8" />
-          </div>
-          <div className="text-lg font-bold mb-2">How Can We Help?</div>
-          <div className="text-sm mb-1 flex items-center justify-center gap-1">
-            <Phone className="w-3 h-3" />
-            <span> +91 96550 99933</span>
-          </div>
-          <div className="text-xs flex items-center justify-center gap-1">
-            <Mail className="w-3 h-3" />
-            <span>info@Ravananpackersandmovers.com</span>
+            <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tight leading-none">
+              Our <span className="text-yellow-400">Services</span>
+            </h1>
+            <p className="text-2xl text-gray-300 font-light">
+              Ready to move? We're ready to help.
+            </p>
           </div>
         </div>
       </div>
 
+      {/* Main Container - Black Background */}
+      <div className="min-h-screen bg-black">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 py-12 px-4">
+
+    {/* Main Content */}
+     <Outlet />    
+          
+          {/* Sidebar */}
+          <div className="lg:w-80 flex-shrink-0">
+
+                {/* Help CTA */}
+          
+
+                   {/* Contact Info */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-yellow-400/20 rounded-2xl overflow-hidden shadow-2xl shadow-yellow-400/5">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black p-5 font-bold text-lg tracking-wide">
+                CONTACT INFO
+              </div>
+              <div className="p-6 space-y-6">
+                <div className="flex items-start gap-4 group">
+                  <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-xl p-3 flex-shrink-0 shadow-lg shadow-yellow-500/30 group-hover:scale-110 transition-transform">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-yellow-400 mb-1">Email Address</div>
+                    <div className="text-gray-400 text-sm break-all">info@Ravananpackersandmovers.com</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-xl p-3 flex-shrink-0 shadow-lg shadow-yellow-500/30 group-hover:scale-110 transition-transform">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-yellow-400 mb-1">Phone Number</div>
+                    <div className="text-gray-400 text-sm">+91 96550 99933</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-xl p-3 flex-shrink-0 shadow-lg shadow-yellow-500/30 group-hover:scale-110 transition-transform">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-yellow-400 mb-1">Location</div>
+                    <div className="text-gray-400 text-sm leading-relaxed">
+                      D/O Thangaraj, 44, Neelampayalam, Kollapanur, Gobichettipalayam, Getticheyur, Erode District, Tamil Nadu – 638110
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          
+            </div>
+            {/* Services Menu */}
+            <div className="bg-gradient-to-br mt-5 from-gray-900 to-black border border-yellow-400/20 rounded-2xl overflow-hidden mb-8 shadow-2xl shadow-yellow-400/5">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black p-5 font-bold text-lg tracking-wide">
+                OUR SERVICES
+              </div>
+              <div className="p-2">
+                {services.map((service, index) => {
+                  const isActive = location.pathname === service.path;
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => navigate(service.path)}
+                      className={`flex items-center justify-between px-5 py-4 my-1 cursor-pointer transition-all duration-300 rounded-xl group
+                        ${isActive 
+                          ? "bg-gradient-to-r from-yellow-600 to-yellow-700 text-white shadow-lg shadow-yellow-500/30" 
+                          : "text-gray-300 hover:bg-gray-800/50 hover:text-yellow-400"
+                        }
+                      `}
+                    >
+                      <span className="font-medium">{service.name}</span>
+                      <ChevronRight className={`w-5 h-5 transition-transform ${isActive ? '' : 'group-hover:translate-x-1'}`} />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+                <div className="bg-gradient-to-br from-gray-800 to-black p-8 text-center border-t border-yellow-400/20">
+                <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-xl shadow-yellow-500/40 hover:scale-110 transition-transform cursor-pointer">
+                  <Phone className="w-10 h-10 text-white" />
+                </div>
+                <div className="text-xl font-bold mb-3 text-white">Need Assistance?</div>
+                <div className="text-sm mb-2 flex items-center justify-center gap-2 text-yellow-400 font-semibold">
+                  <Phone className="w-4 h-4" />
+                  <span>+91 96550 99933</span>
+                </div>
+                <div className="text-xs flex items-center justify-center gap-2 text-gray-400">
+                  <Mail className="w-4 h-4" />
+                  <span>info@Ravananpackersandmovers.com</span>
+                </div>
+              </div>
+
+       
+          </div>
+
       
-
-      {/* Main Content */}
-
-      <Outlet />
-   
-
-    </div>
+        </div>
+      </div>
     </>
- 
   );
 }
