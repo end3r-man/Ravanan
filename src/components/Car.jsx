@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ArrowRight, Package, Warehouse, Shield } from "lucide-react";
 
-import parcel9 from "../assets/parcel9.jpg";
-import parcel10 from "../assets/parcel10.jpg";
-import parcel11 from "../assets/parcel11.png";
+import parcel9 from "../assets/parc.jpg";
+import parcel10 from "../assets/warhouse.jpg";
+import parcel11 from "../assets/parcel32.jpg";
 
 const slides = [
   {

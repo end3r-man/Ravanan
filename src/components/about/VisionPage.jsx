@@ -1,5 +1,5 @@
 import React from "react";
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/titleimage.png';
 import parcel3 from '../../assets/parcel25.jpg'
 import parcel5 from '../../assets/parcel23.jpg'
 import parcel7 from '../../assets/parcel33.jpg'

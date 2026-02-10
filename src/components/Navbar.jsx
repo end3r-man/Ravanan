@@ -244,11 +244,11 @@ onClick={() =>navigate("/contact")}
         <div className="lg:hidden">
             <div
   className={`block lg:hidden fixed w-full z-40 transition-all duration-500
-    ${showTopBar ? "top-7" : "-top-10"}
+  
     backdrop-blur-sm bg-black
   `}
 >
-          <div className="flex items-center justify-between px-4 py-3  shadow-sm w-full mt-10 ">
+          <div className="flex items-center justify-between px-4 py-3  shadow-sm w-full  ">
             {/* Logo / Title */}
             <div className=" ">
               <img
@@ -260,7 +260,7 @@ onClick={() =>navigate("/contact")}
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 rounded-lg hover:bg-amber-200 transition"
+              className="lg:hidden p-2 rounded-lg bg-yellow-200 hover:bg-amber-200 transition"
               onClick={() => setOpen(!open)}
             >
               {open ? <X size={24} /> : <Menu size={24} />}
@@ -296,7 +296,7 @@ onClick={() =>navigate("/contact")}
                 ${
                   isActive
                     ? "text-amber-600 bg-amber-50"
-                    : "text-gray-700 hover:bg-amber-50 hover:text-amber-600"
+                    : "text-white hover:bg-amber-50 hover:text-amber-600"
                 }`
               }
             >
@@ -312,7 +312,7 @@ onClick={() =>navigate("/contact")}
     setOpenMenu(openMenu === item.name ? null : item.name)
   }
   className="w-full flex justify-between items-center px-6 py-4 font-medium
-             text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+             text-white hover:bg-amber-50 hover:text-amber-600 transition"
 >
   {item.name}
   <span

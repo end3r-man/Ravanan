@@ -2,7 +2,8 @@
 import { Clock, Layers, Minus, Plus, Shield, Star, Truck } from "lucide-react";
 import React, { useState } from "react";
 
-import parcel10 from "../../assets/parcel10.jpg";
+
+import parcel10 from '../../assets/loadimage.jpeg';
 function RelocationPage() {
   const [openFaq, setOpenFaq] = useState(null);
 

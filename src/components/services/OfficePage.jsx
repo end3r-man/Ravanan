@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import parcel20 from "../../assets/parcel20.jpg";
 
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/offimage.jpeg';
 function OfficePage() {
   const [openFaq, setOpenFaq] = useState(null);
 

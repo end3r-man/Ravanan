@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 import parcel17 from "../../assets/parcel17.jpg";
 
-import parcel9 from '../../assets/parcel9.jpg'
-import { useNavigate } from "react-router-dom";
+import parcel9 from '../../assets/bikeshift.jpeg'
+import { useNavigate } from "react-router-dom"; 
 function Bikepage() {
   const [openFaq, setOpenFaq] = useState(null);
 

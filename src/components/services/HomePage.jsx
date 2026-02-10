@@ -2,7 +2,7 @@
 import { Clock, Minus, PackageCheck, Plus, Shield, Star, Truck } from "lucide-react";
 import React, { useState } from "react";
 
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/homeshift.jpeg';
 
 function HomePage() {
   const [openFaq, setOpenFaq] = useState(null);

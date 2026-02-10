@@ -3,7 +3,7 @@ import CompanyIntro from '../home/CompanyIntro'
 import OurProcess from '../home/OurProcess'
 import Service from '../home/Service'
 import Testimonial from '../home/Testimonial'
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/titleimage.png';
 
 function HowItWorkPage() {
   return (

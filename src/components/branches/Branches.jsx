@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Navigation, Clock, ArrowRight, Building2, MapPinned } from 'lucide-react';
 import parcel9 from '../../assets/parcel9.jpg';
-import parcel10 from '../../assets/parcel10.jpg';
+import parcel10 from '../../assets/titleimage.png';
 import parcel24 from '../../assets/parcel24.jpg';
 import parcel25 from '../../assets/parcel25.jpg';
 import { useNavigate } from 'react-router-dom';

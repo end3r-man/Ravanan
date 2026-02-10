@@ -2,7 +2,7 @@
 import { CalendarClock, Clock, Minus, Plus, Shield, Star, Warehouse } from "lucide-react";
 import React, { useState } from "react";
  
-import parcel11 from "../../assets/parcel11.png";
+import parcel11 from "../../assets/warimage.jpeg";
 
 function WarHousePage() {
   const [openFaq, setOpenFaq] = useState(null);

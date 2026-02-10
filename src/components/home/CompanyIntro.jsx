@@ -1,6 +1,6 @@
 import { ArrowRight, CheckCircle, Truck, Shield, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import parcel12 from "../../assets/parcel12.jpg";
+import parcel12 from "../../assets/ff.jpg";
 
 export default function CompanyIntroAlt() {
   const navigate = useNavigate();

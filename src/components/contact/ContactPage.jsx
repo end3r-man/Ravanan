@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Send, CheckCircle } from 'lucide-react';
 import CustomSelect from './CustomSelect';
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/titleimage.png';
  
 
 export default function ContactPage() {

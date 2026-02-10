@@ -1,7 +1,32 @@
 import { ChevronRight } from "lucide-react";
 import logo from "../assets/logo.png";
 
+import work1 from "../assets/work1.jpeg";
+import work2 from "../assets/work2.jpeg";
+import work3 from "../assets/work3.jpeg";
+import work4 from "../assets/work4.jpeg";
+import work5 from "../assets/work5.jpeg";
+import work6 from "../assets/work6.jpeg";
+import work7 from "../assets/work7.jpeg";
+import work8 from "../assets/work8.jpeg";
+import work9 from "../assets/work9.jpeg";
+import work10 from "../assets/work10.jpeg";
+
 const Footer = () => {
+
+  const works = [
+  work1,
+  work2,
+  work3,
+  work4,
+  work5,
+  work6,
+  work7,
+  work8,
+  work9,
+];
+
+
   return (
     <footer className="bg-black text-gray-300 py-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-14">
@@ -103,15 +128,22 @@ const Footer = () => {
           </h3>
           <div className="w-10 h-[2px] bg-yellow-200 my-4"></div>
 
-          <div className="grid grid-cols-3 gap-3">
-            {[...Array(9)].map((_, i) => (
-              <div
-                key={i}
-                className="w-full h-20 bg-gray-800 rounded-md
-                hover:scale-105 transition"
-              />
-            ))}
-          </div>
+     <div className="grid grid-cols-3 gap-3">
+  {works.map((img, i) => (
+    <div
+      key={i}
+      className="w-full h-20 overflow-hidden rounded-md bg-black
+                 hover:scale-105 transition-transform duration-300"
+    >
+      <img
+        src={img}
+        alt={`Work ${i + 1}`}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
 

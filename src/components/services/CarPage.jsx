@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import parcel22 from "../../assets/parcel22.jpg";
 import { Clock, Minus, Plus, Shield, Star, Truck, UserCheck } from "lucide-react";
 
-import parcel9 from '../../assets/parcel9.jpg'
+import parcel9 from '../../assets/carshift.jpeg'
 // import parcel10 from '../assets/parcel10.jpg'
 // import parcel11 from '../assets/parcel11.png'
 

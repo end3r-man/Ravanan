@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Mail, Phone, MapPin, Download, Plus, Minus, Clock, Shield, Star } from 'lucide-react';
 import { Outlet, useNavigate } from 'react-router-dom';
-import parcel10 from '../../assets/parcel10.jpg'
+import parcel10 from '../../assets/titleimage.png';
 import parcel17 from "../../assets/parcel17.jpg";
 import parcel9 from '../../assets/parcel9.jpg'
 
