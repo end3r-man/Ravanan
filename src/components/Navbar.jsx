@@ -132,7 +132,7 @@ useEffect(() => {
 </div> */}
 
     <div
-  className={`hidden lg:block fixed w-full z-40 transition-all duration-500
+  className={`hidden lg:block fixed w-full z-50 transition-all duration-500
     ${showTopBar ? "top-0" : "-top-0"}
     backdrop-blur-sm bg-black
   `} 
@@ -237,7 +237,7 @@ onClick={() =>navigate("/contact")}
 
       {/* ================= LOGO + CONTACT ================= */}
 
-      <div className="bg-colo relative z-10">
+      <div className="bg-colo relative z-50">
       
 
         {/* MOBILE MENU ICON */}
@@ -269,7 +269,7 @@ onClick={() =>navigate("/contact")}
           </div>
         </div>
           <nav
-        className={`${ showTopBar ? "top-35" : "top-20" }  z-50 isolate    transition-all duration-500    bg-primary text-white text-sm ml-auto w-full  lg:w-[70%] clip-md2 fixed `}
+        className={`${ showTopBar ? "top-20" : "top-0" }  z-50 isolate    transition-all duration-500    bg-primary text-white text-sm ml-auto w-full  lg:w-[70%] clip-md2 fixed `}
         style={{
         }}
       >

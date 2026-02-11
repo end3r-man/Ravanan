@@ -65,11 +65,11 @@ export default function HeroCarousel() {
           bulletActiveClass: "!bg-white !w-16",
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="h-[500px] md:h-screen"
+        className="h-screen md:h-screen"
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <div className="relative h-[500px] md:h-screen">
+            <div className="relative h-screen md:h-screen">
 
               {/* Image with Ken Burns Effect */}
               <div className="absolute inset-0 overflow-hidden">
