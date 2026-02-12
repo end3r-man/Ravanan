@@ -9,23 +9,25 @@ import { useNavigate } from 'react-router-dom';
 export default function Branches() {
   const navigate = useNavigate();
 
+  <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   const branches = [
     {
-      name: "Gobichettipalayam Branch Office",
-      address: "D/O Thangaraj, 44, Neelampayalam, Kollapanur, Gobichettipalayam, Getticheyur, Erode District, Tamil Nadu – 638110",
-      phone: "+91 96550 99911, +91 96550 99933",
-      email: "info@Ravananpackersandmovers.com",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501243.05649920995!2d76.99168377998062!3d11.041522533112273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba90900755f7a95%3A0x9b3b4296f4d1f443!2sThangaraj%20Home!5e0!3m2!1sen!2sin!4v1770134039246!5m2!1sen!2sin",
+      name: "Salem Branch Office",
+      address: "salem (dk),edappadi to kumarapalayam main road , thevur , kaveripatti (post) , 637104",
+      phone: "+91 63793 00624: +91 7358095325 , +91 6379300624",
+      email: " ravananpackersandmovers@gmail.com",
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.503136847761!2d77.69003497481532!3d11.443564788748704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba969d637234a55%3A0x228c570ede182c64!2sKaaliyamman%20Kovil%20Rd%2C%20Tamil%20Nadu%20638183!5e0!3m2!1sen!2sin!4v1770911921838!5m2!1sen!2sin",
       image: parcel9
     },
-    {
-      name: "Erode Branch Office",
-      address: "5/287 – 22, MGR Nagar, Near Bannari Amman Sugars, Alathukombai, Erode – 638 401, Tamil Nadu",
-      phone: "+91 96550 99911, +91 96550 99933",
-      email: "info@Ravananpackersandmovers.com",
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.410214672231!2d77.23011207587654!3d11.54187648867327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3f5f1c4dcb%3A0x9a7c8b8f3d2e6a1f!2sBannari%20Amman%20Sugars%2C%20Alathukombai!5e0!3m2!1sen!2sin!4v1766763614832!5m2!1sen!2sin",
-      image: parcel10
-    },
+    // {
+    //   name: "Erode Branch Office",
+    //   address: "5/287 – 22, MGR Nagar, Near Bannari Amman Sugars, Alathukombai, Erode – 638 401, Tamil Nadu",
+    //   phone: "+91 96550 99911, +91 96550 99933",
+    //   email: "info@Ravananpackersandmovers.com",
+    //   mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.410214672231!2d77.23011207587654!3d11.54187648867327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3f5f1c4dcb%3A0x9a7c8b8f3d2e6a1f!2sBannari%20Amman%20Sugars%2C%20Alathukombai!5e0!3m2!1sen!2sin!4v1766763614832!5m2!1sen!2sin",
+    //   image: parcel10
+    // },
   ];
 
   return (
@@ -173,6 +175,21 @@ export default function Branches() {
                   className="text-white hover:text-yellow-400 font-semibold text-lg hover:underline transition-colors"
                 >
                   {branch.phone}
+                </a>
+              </div>
+            </div>
+
+              <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center shadow-lg">
+                <Mail className="w-6 h-6 text-black" />
+              </div>
+              <div className="flex-1">
+                <p className="font-bold text-yellow-400 mb-1 text-sm uppercase tracking-wide">Email</p>
+                <a 
+                  href={`tel:${branch.phone}`}
+                  className="text-white hover:text-yellow-400 font-semibold text-lg hover:underline transition-colors"
+                >
+                  {branch.email}
                 </a>
               </div>
             </div>

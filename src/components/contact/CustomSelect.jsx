@@ -36,10 +36,13 @@ export default function CustomSelect({
          w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400 transition-colors
         "
       >
-        <span className={formData[thisOne] ? "text-gray-800" : "text-gray-500"}>
-          {/* {formData[thisOne] || "Select a service"} */}
-          {thisOne == "service"  ? "Select a service" : "Select a location"}
-        </span>
+      <span className={formData[thisOne] ? "text-white" : "text-gray-500"}>
+  {formData[thisOne]
+    ? formData[thisOne]
+    : thisOne === "service"
+    ? "Select a service"
+    : "Select a location"}
+</span>
 
         <ChevronDown
           className={`w-5 h-5 transition-transform text-gray-500 ${

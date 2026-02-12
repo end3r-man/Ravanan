@@ -369,7 +369,7 @@ onClick={() =>navigate("/contact")}
 
       </div>
       <div className="fixed left-5 md:left-10 bottom-5 md:bottom-20 z-50 isolate  " >
-<a href="tel:9655099911" className="relative inline-block">
+<a href="tel:6379300624" className="relative inline-block">
   {/* Ping animation */}
   <div className="absolute inset-0 rounded-full bg-red animate-ping"></div>
 
@@ -383,7 +383,7 @@ onClick={() =>navigate("/contact")}
       </div>
        <div className="fixed right-5  md:right-10 bottom-5 md:bottom-20 cursor-pointer  z-50 isolate  " >
    <a
-  href="https://wa.me/919655099911"
+  href="https://wa.me/7358095325"
   target="_blank"
   rel="noopener noreferrer"
   className="relative inline-block"

@@ -61,6 +61,8 @@ const Footer = () => {
             Mon–Fri ........ 8:00 am – 06:00 pm <br />
             Sat–Sun ........ 8:00 am – 12:00 pm
           </p>
+          
+
         </div>
 
         {/* OUR SERVICES */}
@@ -145,6 +147,23 @@ const Footer = () => {
 </div>
 
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto   flex flex-col items-center " >
+          <h3 className="mt-10 text-yellow-200 font-semibold uppercase">
+            Address
+          </h3>
+          <div className="w-10 h-[2px] bg-yellow-200 my-3"></div>
+
+          <p className="text-sm text-gray-300">
+          Salem (dk),Edappadi to kumarapalayam main road , Thevur , Kaveripatti (post) , 637104.
+          </p>
+            <p className="text-sm text-gray-300">
+              Phone: 6379300624, 7358095325, 6379300624
+          </p>
+            <p className="text-sm text-gray-300">
+              Email: ravananpackersandmovers@gmail.com
+          </p>
       </div>
 
       {/* BOTTOM BAR */}

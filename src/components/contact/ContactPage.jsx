@@ -27,7 +27,7 @@ export default function ContactPage() {
   ];
 
   const locations = [
-    'Erode, Tamil Nadu',
+    'Salem, Tamil Nadu',
     'Other'
   ];
 
