@@ -369,7 +369,7 @@ onClick={() =>navigate("/contact")}
 
       </div>
       <div className="fixed left-5 md:left-10 bottom-5 md:bottom-20 z-50 isolate  " >
-<a href="tel:6379300624" className="relative inline-block">
+<a href="tel:7358095325" className="relative inline-block">
   {/* Ping animation */}
   <div className="absolute inset-0 rounded-full bg-red animate-ping"></div>
 

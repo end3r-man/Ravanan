@@ -11,19 +11,28 @@ import work7 from "../assets/work7.jpeg";
 import work8 from "../assets/work8.jpeg";
 import work9 from "../assets/work9.jpeg";
 import work10 from "../assets/work10.jpeg";
+import link1 from "../assets/link1.jpeg";
+import link2 from "../assets/link2.jpeg";
+import link3 from "../assets/link3.jpeg";
+import link4 from "../assets/link4.jpeg";
+import link5 from "../assets/link5.jpeg";
 
 const Footer = () => {
 
   const works = [
-  work1,
+  // work1,
   work2,
   work3,
-  work4,
+  // work4,
   work5,
-  work6,
-  work7,
+  // work6,
+  // work7,
   work8,
   work9,
+  link1,
+  link2,
+  link3,
+  link4,
 ];
 
 

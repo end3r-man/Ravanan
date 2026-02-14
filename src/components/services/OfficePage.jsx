@@ -5,12 +5,13 @@ import React, { useState } from "react";
 import parcel20 from "../../assets/parcel20.jpg";
 
 import parcel10 from '../../assets/offimage.jpeg';
+import link7 from '../../assets/link7.jpeg';
 function OfficePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 
   const pageContent = {
-  heroImage: parcel10,
+  heroImage: link7,
   title: "Office Shifting Services",
   description: [
     "Our Office Shifting Service is designed to relocate your workspace efficiently with minimal downtime. Whether you are moving a small office or a large corporate setup, we ensure a smooth and well-coordinated transition.",
@@ -87,7 +88,7 @@ const faqs = [
               <img
                 src={pageContent.heroImage}
                 alt="Bike Transportation"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-center  group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8">

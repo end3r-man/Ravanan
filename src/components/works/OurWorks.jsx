@@ -37,6 +37,11 @@ import work34 from "../../assets/work34.jpeg";
 import work35 from "../../assets/work35.jpeg";
 import work36 from "../../assets/work36.jpeg";
 import { useNavigate } from 'react-router-dom';
+import link1 from "../../assets/link1.jpeg";
+import link2 from "../../assets/link2.jpeg";
+import link3 from "../../assets/link3.jpeg";
+import link4 from "../../assets/link4.jpeg";
+import link5 from "../../assets/link5.jpeg";
 
 const OurWorks = () => {
   const [isAnimating] = useState(false);
@@ -49,7 +54,7 @@ const OurWorks = () => {
     { id: 4, image: work4 },
     { id: 5, image: work5 },
     { id: 6, image: work6 },
-    { id: 7, image: work7 },
+    { id: 7, image: link1 },
     { id: 8, image: work8 },
     { id: 9, image: work9 },
     { id: 10, image: work10 },
@@ -78,7 +83,11 @@ const OurWorks = () => {
     { id: 33, image: work33 },
     { id: 34, image: work34 },
     { id: 35, image: work35 },
-    { id: 36, image: work36 }
+    { id: 36, image: work36 },
+    { id: 37, image: link2 },
+    { id: 38, image: link3 },
+    { id: 39, image: link4 },
+    { id: 40, image: link5 },
   ];
 
   return (

@@ -2,6 +2,7 @@ import { Clock, Minus, Plus, Shield, Star } from "lucide-react";
 import React, { useState } from "react";
 
 import parcel17 from "../../assets/parcel17.jpg";
+import  link6 from "../../assets/link6.jpeg";
 
 import parcel9 from '../../assets/bikeshift.jpeg'
 import { useNavigate } from "react-router-dom"; 
@@ -11,7 +12,7 @@ function Bikepage() {
   const navigate = useNavigate();
   // ===== PAGE CONTENT DATA =====
   const pageContent = {
-    heroImage: parcel9,
+    heroImage: link6,
     title: "Bike Transportation Services",
     description: [
       "Our Bike Transportation Service is designed to move your two-wheeler safely, efficiently, and without hassle. Whether you are relocating to a new city or sending your bike across states, we ensure secure handling from pickup to delivery using professional packing methods.",
