@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle, Truck, Shield, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import parcel12 from "../../assets/ff.jpg";
+import link50 from "../../assets/link50.jpg";
 
 export default function CompanyIntroAlt() {
   const navigate = useNavigate();
@@ -72,7 +73,7 @@ export default function CompanyIntroAlt() {
         {/* IMAGE */}
         <div className="relative">
           <img
-            src={parcel12}
+            src={link50}
             alt="Ravanan Movers"
             className="rounded-3xl object-cover w-full h-[480px]"
           />
