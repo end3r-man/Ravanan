@@ -8,6 +8,9 @@ import axios from 'axios';
 
 export default function ContactPage() {
 
+
+  console.log(import.meta.env.VITE_WEBHOOK_URL, "fast ranger");
+
    useHead({
         title: 'Contact Us',
       })
@@ -83,10 +86,11 @@ export default function ContactPage() {
 
       console.log("Submitting:", updatedData);
 
+
       const response = await axios.post(
-        "https://n8n-z4cwcooc0g48ckkcsg4o4kg4.elgfoundation.in/webhook/6ea4ad2d-e4c1-4bd5-ae7c-f1405c976f3f",
+      import.meta.env.VITE_WEBHOOK_URL,
         updatedData,
-        {
+        { 
           headers: {
             "Content-Type": "application/json",
           },
